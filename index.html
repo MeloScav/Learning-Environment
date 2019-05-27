@@ -4,51 +4,56 @@
     <title>MarkDown</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1>Petite Histoire de Markdown</h1>
-        <p> Markdown est un système d'édition et de formatage de texte. Il est l'oeuvre de deux américains: **John Gruber** et **Aaron Swartz**. <br>
-            C'est un langage assez récent. En effet, il ne date que de 2004 et n'a subit aucune modifictaion depuis.<br>
-            Le but est assez simple: éditer des textes **simples** avece quelques caractère spéciaux: gras, taille des textes, italiques, etc... <br>
-            Du fait que le format n'a jamais été standardisé, il dispose de nombreuses implémentations (Dans *GitHub* et dans *Stack Overflow* pour les plus répandues). Il est par contre déconseillé de s'en servir hors besoins spécifiques
-            car ces implémentations ne sont pas compatibles.</p>
+    <article>
+        <h1 class="grosTitre">Petite Histoire de Markdown</h1>
+            <p> Markdown est un système d'édition et de formatage de texte. Il est l'oeuvre de deux américains: **John Gruber** et **Aaron Swartz**. <br>
+                C'est un langage assez récent. En effet, il ne date que de 2004 et n'a subit aucune modifictaion depuis.<br>
+                Le but est assez simple: éditer des textes **simples** avece quelques caractère spéciaux: gras, taille des textes, italiques, etc... <br>
+                Du fait que le format n'a jamais été standardisé, il dispose de nombreuses implémentations (Dans *GitHub* et dans *Stack Overflow* pour les plus répandues). Il est par contre déconseillé de s'en servir hors besoins spécifiques
+                car ces implémentations ne sont pas compatibles.</p>
 
-    <h1>Utilisation</h1>
-        <p>Le but de Markdown est que ce soit **lisible** sans même utiliser un interpréteur en mode texte.<br>
+        <h1 class="grosTitre">Utilisation</h1>
+          <p>Le but de Markdown est que ce soit **lisible** sans même utiliser un interpréteur en mode texte.<br>
             C'est un langage facile d'accès et facilement visualisable avant d'être converti dans sa version de **"présentation"**.<br>
             Un autre avantage de *Markdown*, du fait que le résulat sera exporté en *HTML* est que ce langage accepte les balises *HTML*, pour pouvoir quand même faire des animations, intégrer des vidéos et d'autres
-           fonctionnalités non présentes dans *Markdown*.</p>
+            fonctionnalités non présentes dans *Markdown*.</p>
 
 
-       <p>En général, les documents sont enregistrés avec l'extension .md ou .markdown .</p>
+          <p>En général, les documents sont enregistrés avec l'extension .md ou .markdown .</p>
 
-![Now let's get ready to LEARN](https://memegenerator.net/img/instances/53358119/now-lets-get-ready-to-learn.jpg)
+          <img src="https://memegenerator.net/img/instances/53358119/now-lets-get-ready-to-learn.jpg"/>
 
-
-    <h2>FORMAT</h2>
+     <h1 class="grosTitre">Format</h1>
+     <section id="section1">
         <h3>Les paragraphes</h3>
             <p>Pour afficher un paragraphe, sautez deux lignes et rédigez votre texte. Un seul saut de ligne correspond à un retour chariot (retour à la ligne) et non pas à un changement de paragraphe.</p>
-
+     </section>
+     <section id="section2">
         <h3>Mise en forme du texte</h3>
 
               <ul>Pour mettre en évidence un texte ou l'entoure de *, ~, ou _ selon le changement que l'on souhaite apporter.
-                    <li>*italique* = <i>italique<i></li>
-                    <li>**gras** = <b>gras<b></li>
+                    <li>*italique* = <i>italique</i></li>
+                    <li>**gras** = <b>gras</b></li>
                     <li>***italique gras*** = <b><i>italique gras</i></b></li>
                     <li>~~barré~~ = <del>barré</del></li>
               </ul>
-
+     </section>
+     <section id="section3">
         <h3>Blocs de citation</h3>
 
             <p>Tapez un chevron fermant > ensuite une espace et le texte du paragraphe.</p>
 
-                <blockquote> > Voici un exemple de texte en bloc de citation et en paragraphe avec indentation. Le décalage à gauche persiste tant qu'on fait des retours chariot.</blockquote>
+                <q> > Voici un exemple de texte en bloc de citation et en paragraphe avec indentation. Le décalage à gauche persiste tant qu'on fait des retours chariot.</q>
 
-                <blockquote> >> Voici un exemple de texte en bloc de citation avec deux chevrons fermants.</blockquote>
+                <q> >> Voici un exemple de texte en bloc de citation avec deux chevrons fermants.</q>
 
                 <p>Voici un exemple de retour en texte normal.</p>
-
+     </section>
+     <section id="section4">
       <h3>Code incorporé</h3>
 
           <p>Voici du code incorporé.<p>
@@ -65,8 +70,8 @@
 
           <p>donne :<br>
               <a href="#">Du code</a></p>
-
-
+      </section>
+      <section id="section5">
       <h3>Des listes</h3>
           <p>Vous pouvez organiser les éléments en listes ordonnées et non ordonnées.</p>
 
@@ -130,7 +135,8 @@
                     <li>Quatrième article</li>
                 </ul>
 
-
+       </section>
+       <section id="section6">
         <h3>Checkbox</h3>
             <p>Pour créer une liste des tâches, il faut insérer un espace et le faire suivre de [ ] , pour cocher une case il faite faire espace [x]</p>
                 <ul>
@@ -163,7 +169,9 @@
                 # Titre 1<br>
                 ## Titre 2</p>
 
+      </section>
 
+      <section id="section7">
       <h3>Les tableaux</h3>
           <p>Pour créer un tableau, il faut dessiner des colonnes en les entourant par des |.<br>
             Le nombre de colonnes est défini dans la première ligne du tableau et il faut avoir le même nombre de colonnes pour chaque ligne, même si elles sont vides !<br>
@@ -195,7 +203,7 @@
                 <td align="center">au centre</td>
                 <td align="right">à droite</td>
               </tr>
-          </table> <br>
+          </table><br>
 
 
           <p>Cependant, bien que cette manière de faire soit plus lisible en mode édition, les | en début et en fin de ligne sont optionnels.<br>
@@ -207,7 +215,8 @@
              Texte| Texte| Texte à<br>
              à gauche|**gras et centré** |*droite et italique*</p>
 
-
+      </section>
+      <section id="section8">
       <h3>Les liens</h3>
           <p>Pour créer des liens en Markdown, équivalents à la balise <a> en HTML, il faut écrire le texte qui sera affiché entre crochets, suivi de l'URL entre parenthèses.<br>
             Il est également possible mais facultatif d'ajouter un titre, tout de suite après l'URL.</p>
@@ -224,3 +233,5 @@
           <p>Résultat : </p><br>
           <img src="https://memegenerator.net/img/instances/68413696/markdown-for-what.jpg" alt="Lil' John's Markdowne"/><br>
           <img src="https://media.giphy.com/media/g68Za3jPzVJ04/giphy.gif" alt="Coding.."/>
+      </sectionW
+    </article>
