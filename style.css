@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EEF6FF;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+.grosTitre{
+    text-shadow: 5px 5px 2px #B5B5B5;
+    font-size: 50px;
+
+}
+
+h1, p, img{
+  padding-left: 10px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+#section1{
+    padding: 10px;
+    background-color: #E3B4FF;
+    border-top: 5px solid #B699E8;
+}
+#section1 p{
+    padding-left: 15px;
+}
+
+#section2{
+    padding: 10px;
+    background-color: #A8CCFF;
+    border-top: 5px solid #8E9BE8;
+}
+
+#section3{
+    padding: 10px;
+    background-color: #FFA6C5;
+    border-top: 5px solid #EBA3A0;
+}
+
+#section4{
+   padding: 10px;
+   background-color: #C0FFC4;
+   border-top: 5px solid #B5E8A2;
+}
+
+#section5{
+   padding: 10px;
+   background-color: #FFCDA1;
+   border-top: 5px solid #E89B8B;
+}
+
+#section6{
+   padding: 10px;
+   background-color: #9DFFB8;
+   border-top: 5px solid #84E884;
+}
+
+#section7{
+   padding: 10px;
+   background-color: #CAA0EB;
+   border-top: 5px solid #A18AFF;
+}
+
+#section8{
+   padding: 10px;
+   background-color: #8FEB83;
+   border-top: 5px solid #D0FF91;
+}
