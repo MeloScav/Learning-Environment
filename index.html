@@ -1,1 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MarkDown</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
+  <body>
+    <h1>Petite Histoire de Markdown</h1>
+        <p> Markdown est un système d'édition et de formatage de texte. Il est l'oeuvre de deux américains: **John Gruber** et **Aaron Swartz**. <br>
+            C'est un langage assez récent. En effet, il ne date que de 2004 et n'a subit aucune modifictaion depuis.<br>
+            Le but est assez simple: éditer des textes **simples** avece quelques caractère spéciaux: gras, taille des textes, italiques, etc... <br>
+            Du fait que le format n'a jamais été standardisé, il dispose de nombreuses implémentations (Dans *GitHub* et dans *Stack Overflow* pour les plus répandues). Il est par contre déconseillé de s'en servir hors besoins spécifiques
+            car ces implémentations ne sont pas compatibles.</p>
+
+    <h1>Utilisation</h1>
+        <p>Le but de Markdown est que ce soit **lisible** sans même utiliser un interpréteur en mode texte.<br>
+            C'est un langage facile d'accès et facilement visualisable avant d'être converti dans sa version de **"présentation"**.<br>
+            Un autre avantage de *Markdown*, du fait que le résulat sera exporté en *HTML* est que ce langage accepte les balises *HTML*, pour pouvoir quand même faire des animations, intégrer des vidéos et d'autres
+           fonctionnalités non présentes dans *Markdown*.</p>
+
+
+       <p>En général, les documents sont enregistrés avec l'extension .md ou .markdown .</p>
+
+![Now let's get ready to LEARN](https://memegenerator.net/img/instances/53358119/now-lets-get-ready-to-learn.jpg)
+
+
+    <h2>FORMAT</h2>
+        <h3>Les paragraphes</h3>
+            <p>Pour afficher un paragraphe, sautez deux lignes et rédigez votre texte. Un seul saut de ligne correspond à un retour chariot (retour à la ligne) et non pas à un changement de paragraphe.</p>
+
+        <h3>Mise en forme du texte</h3>
+
+              <ul>Pour mettre en évidence un texte ou l'entoure de *, ~, ou _ selon le changement que l'on souhaite apporter.
+                    <li>*italique* = <i>italique<i></li>
+                    <li>**gras** = <b>gras<b></li>
+                    <li>***italique gras*** = <b><i>italique gras</i></b></li>
+                    <li>~~barré~~ = <del>barré</del></li>
+              </ul>
+
+        <h3>Blocs de citation</h3>
+
+            <p>Tapez un chevron fermant > ensuite une espace et le texte du paragraphe.</p>
+
+                <blockquote> > Voici un exemple de texte en bloc de citation et en paragraphe avec indentation. Le décalage à gauche persiste tant qu'on fait des retours chariot.</blockquote>
+
+                <blockquote> >> Voici un exemple de texte en bloc de citation avec deux chevrons fermants.</blockquote>
+
+                <p>Voici un exemple de retour en texte normal.</p>
+
+      <h3>Code incorporé</h3>
+
+          <p>Voici du code incorporé.<p>
+          <p>Pour afficher du code en tant que tel, voici deux solutions :</p>
+          <ul>
+              <li>Quatre espaces avant le code</li>
+              <li>Trois tildes (~) avant et après + le mot clé html avant le code</li>
+          </ul><br>
+
+          <p>~~~html<br>
+            <a href=“#”>Du code</a><br>
+            ~~~
+          </p>
+
+          <p>donne :<br>
+              <a href="#">Du code</a></p>
+
+
+      <h3>Des listes</h3>
+          <p>Vous pouvez organiser les éléments en listes ordonnées et non ordonnées.</p>
+
+              <h4>Listes Ordonnées</h4>
+                    <p>Pour créer une liste ordonnée, ajoutez des éléments de ligne avec des nombres suivis de points. Les numéros ne doivent pas nécessairement être dans l’ordre numérique, mais la liste doit commencer par le numéro un.</p>
+                    <ol>
+                          <li>1. Premier article</li>
+                          <li>2. Deuxième élément</li>
+                          <li>3. Troisième article</li>
+                          <li>4. Quatrième point</li>
+                   </ol>
+
+             <h4>Listes non ordonnées</h4>
+                  <p>Pour créer une liste non ordonnée, ajoutez des tirets (-), des astérisques (*) ou des signes plus (+) devant les éléments de campagne. Indenter un ou plusieurs éléments pour créer une liste imbriquée</p>
+                  <ul>
+                        <li>- Premier article</li>
+                        <li>- Deuxième article</li>
+                        <li>- Troisième article</li>
+                        <li>- Quatrième article</li>
+                 </ul>
+                 <ul>
+                        <li>* Premier article</li>
+                        <li>* Deuxième article</li>
+                        <li>* Troisième article</li>
+                        <li>* Quatrième article</li>
+                </ul>
+                <ul>
+                        <li>* Premier article</li>
+                        <li>- Deuxième article</li>
+                        <li>+ Troisième article</li>
+                        <li>* Quatrième article</li>
+                </ul>
+                <p>Donnera :</p>
+                <ul>
+                      <li>* Premier article</li>
+                      <li>* Deuxième article</li>
+                </ul>
+
+
+            <h4>Liste imbriquée</h4>
+                <ul>
+                    <li>Premier niveau de cette liste.</li>
+                          <ul>
+                              <li>* Pour créer un second niveau, ajoutez deux espaces avant l’astérisque ou le numéro.</li>
+                          </ul>
+                    <li>Premier article</li>
+                    <li>Deuxième article</li>
+                    <li>Troisième article</li>
+                          <ul>
+                              <li>Article en retrait</li>
+                              <li>Article en retrait</li>
+                          </ul>
+                    <li>Quatrième article</li>
+                    <li>Premier article</li>
+                    <li>Deuxième article</li>
+                    <li>Troisième article</li>
+                        <ul>
+                            <li>Article en retrait</li>
+                            <li>Article en retrait</li>
+                        </ul>
+                    <li>Quatrième article</li>
+                </ul>
+
+
+        <h3>Checkbox</h3>
+            <p>Pour créer une liste des tâches, il faut insérer un espace et le faire suivre de [ ] , pour cocher une case il faite faire espace [x]</p>
+                <ul>
+                    <li>- [x] Format titre</li>
+                    <li>- [ ] Push un commit à GitHub</li>
+                    <li>- [ ] pull request</li>
+               </ul>
+
+
+       <h3>Les titres</h3>
+            <p>Il existe deux syntaxes différentes pour les titres :</p>
+                <ul>
+                    <li>La méthode par **soulignement**</li>
+                    <li>La méthode par **dièses** (#)</li>
+                </ul>
+
+            <p>La méthode par soulignement ne permet que **deux niveaux de titre**. Le titre doit être souligné par deux caractères (= ou -) ou plus.</p>
+            <p>Le = équivaut au titre 1 alors que le - équivaut au titre 2.</p>
+            <p>Exemple: <br>
+              Titre 1<br>
+              ==<br>
+              Titre 2<br>
+              --</p>
+
+
+              <p>La méthode par dièses est très simple, il suffit d'ajouter des # en début de titre sans limitation du nombre (il ne faut cependant pas dépasser les 7 #).<br>
+                Un seul # pour le titre 1 (h1), deux # pour le titre 2 (h2) et ainsi de suite.<br>
+                On peut également fermer les titres par un ou deux # mais c'est purement esthétique.</p>
+              <p>Exemple: <br>
+                # Titre 1<br>
+                ## Titre 2</p>
+
+
+      <h3>Les tableaux</h3>
+          <p>Pour créer un tableau, il faut dessiner des colonnes en les entourant par des |.<br>
+            Le nombre de colonnes est défini dans la première ligne du tableau et il faut avoir le même nombre de colonnes pour chaque ligne, même si elles sont vides !<br>
+            La première ligne sera l'en-tête. <br>
+            La seconde va séparer l'en-tête du reste du tableau ainsi que définir l'alignement du texte dans les colonnes. Elle ne contient que des tirets - et des deux points : utilisés pour définir cet alignement. <br>
+            S'il n'y a pas de deux points ou juste un à gauche signifie que le texte s'alignera à gauche.<br>
+            Si la ligne - est entourée par deux :, le texte sera aligné au centre. <br>
+            Si un seul : est présent sur la droite, le texte s'alignera à droite.</p>
+
+          <p>Exemple: <br>
+              | En-tête 1            | En-tête 2             | En-tête 3           |<br>
+              |:---------------------|:---------------------:|--------------------:|<br>
+              |Texte aligné          |Texte                  |Texte                |<br>
+              |à gauche              |      au centre        |             à droite|</p>
+
+          <table>
+              <tr>
+                <td>En-tête 1</td>
+                <td>En-tête 2</td>
+                <td>En-tête 3</td>
+              </tr>
+              <tr>
+                <td align="left">Texte aligné</td>
+                <td align="center">Texte</td>
+                <td align="right">Texte</td>
+              </tr>
+              <tr>
+                <td align="left">à gauche</td>
+                <td align="center">au centre</td>
+                <td align="right">à droite</td>
+              </tr>
+          </table><br>
+
+
+          <p>Cependant, bien que cette manière de faire soit plus lisible en mode édition, les | en début et en fin de ligne sont optionnels.<br>
+             Il est également possible d'imbriquer des éléments d'emphases ou de code dans les tableaux.<br>
+             Ensuite, il n'y a besoin que d'un seul - pour séparer l'en-tête du corps du tableau. </p>
+          <p> Exemple : <br>
+             En-tête 1 | En-tête 2 | En-tête 3<br>
+             -|:-: |-:<br>
+             Texte| Texte| Texte à<br>
+             à gauche|**gras et centré** |*droite et italique*</p>
+
+
+      <h3>Les liens</h3>
+          <p>Pour créer des liens en Markdown, équivalents à la balise <a> en HTML, il faut écrire le texte qui sera affiché entre crochets, suivi de l'URL entre parenthèses.<br>
+            Il est également possible mais facultatif d'ajouter un titre, tout de suite après l'URL.</p>
+          <p> Exemple :<br>
+              [Texte Affiché](Votre_URL "Titre, facultatif")</p>
+          <p>Résultat :<br>
+
+          <a href="http://www.google.com">Texte Affiché</a>
+
+      <h3>Images</h3>
+          <p>Pour afficher des images, statiques ou dynamiques telles que la balise "<img>" en HTML, la syntaxe est très similaire aux liens, excepté la présence d'un point d'exclamation au début de la balise.</p>
+          <p>Exemple :<br>
+            ![Texte alternatif](URL_de_l'image "Titre, facultatif")</p>
+          <p>Résultat : </p><br>
+          <img src="https://memegenerator.net/img/instances/68413696/markdown-for-what.jpg" alt="Lil' John's Markdowne"/><br>
+          <img src="https://media.giphy.com/media/g68Za3jPzVJ04/giphy.gif" alt="Coding.."/>
