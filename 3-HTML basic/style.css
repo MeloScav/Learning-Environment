@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    background-color: #F6EDF8;
+}
+
+/*              Titre du refuge          */
+#Titre{
+    font-size: 280%;
+    text-shadow: 3px 3px 3px grey;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 25px;
+}
+
+/*           Image principale               */
+header img{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+/*                 Corps du texte                          */
+article{
+    width: 60%;
+	  height: auto;
+	  border: 6px solid rgba( 157, 96, 180, 0.5);  /*Bordure transparante.*/
+	  margin: 20px auto; /* Marge extérieure. Ici le "auto", pour les marges G et D, permet de centrer l'élément.*/
+}
+
+/* Les paragraphes */
+#section1{
+    padding-left: 90px;
+}
+#section1 a{
+    text-decoration: none;
+}
+#section1 a:visited{
+    color: #B56DD1;
+}
+
+#section2{
+    padding-left: 80px;
+    padding-bottom: 25px;
+}
+
+/* La citation */
+#citation{
+    margin-left: 10px;
+    padding-left: 55px;
+    font-style: italic;
+    background-color: #F1F1F1;
+    background: url("blockquote1.jpg");
+    background-repeat: no-repeat;
+    height: 37px;
+}
+#auteur{
+    padding-left: 45px;
+}
+
+#auteur a{
+    text-decoration: none;
+}
+#auteur a:visited{
+    color: #B56DD1;
+}
+
+
+/*           Les images              */
+#images{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgba(232,230,255, 0.1);
+}
+
+#img1{
+    height: 10vw;
+}
+#img1:hover{
+	 transform: scale(2,2);
+   border-radius: 30px;
+}
+
+#img2{
+    height: 10vw;
+}
+#img2:hover{
+	 transform: scale(2,2);
+	 border-radius: 30px;
+}
+
+#img3{
+  height: 10vw;
+}
+#img3:hover{
+	 transform: scale(2,2);
+	  border-radius: 30px;
+}
+
+#img4{
+    height: 10vw;
+}
+#img4:hover{
+	 transform: scale(2,2);
+	 border-radius: 30px;
+}
+
+
+
+
+/*              Pied de page                        */
+.piedDePage{
+     border-top: 2px solid rgba( 157, 96, 180, 0.5);
+     text-align: center;
+}
